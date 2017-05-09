@@ -1,0 +1,12 @@
+from ase import Atoms
+from ase.visualize import view
+
+
+atoms = Atoms ('Ni4', [(0, 0, 0),(0.45, 0 , 0 ), (0, 0.5, 0),(0.5, 0.5, 0)], cell = [1,1,1] )
+view( atoms )
+
+
+atoms[1].x = 0.5
+
+view( atoms )
+
