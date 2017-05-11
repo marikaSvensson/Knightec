@@ -21,7 +21,7 @@ filename = 'write_input.txt'
 outfile = open(filename,'w') # open and read
 
 for n in range(len(x)): 
-	print "%f %f \n", (x[n], y[n])
+	print "%f %f \n ", (x[n], y[n])
 	#outfile.write( "%f %f \n ", (x[n], y[n])  )
   
 infile.close()
