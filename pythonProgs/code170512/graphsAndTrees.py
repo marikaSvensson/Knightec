@@ -66,5 +66,76 @@ print b in O[a] # Neighborhood membership
 print len(O[f]) # Degree
 print O[a][b] # Edge weight for (a, b)
 
+print "Arbitrary, hashable. node lable --> dict is main structure"
+P = {
+'a': set('bcdef'),
+'b': set('ce'),
+'c': set('d'),
+'d': set('e'),
+'e': set('f'),
+'f': set('cgh'),
+'g': set('fh'),
+'h': set('fg')
+}
+
+#for i in range(8):
+#  print "P[%d]: " %(i)
+print len(P)
+print 'a' in P
+print P['a']
+
+print ("--------------------- Adjency Matrices -------------------------")
+
+# a b c d e f g h
+NN = [
+[0,1,1,1,1,1,0,0], # a
+[0,0,1,0,1,0,0,0], # b
+[0,0,0,1,0,0,0,0], # c
+[0,0,0,0,1,0,0,0], # d
+[0,0,0,0,0,1,0,0], # e
+[0,0,1,0,0,0,1,1], # f
+[0,0,0,0,0,1,0,1], # g
+
+
+[0,0,0,0,0,1,1,0]
+] # h
+
+print NN[a][b] # Neighborhood membership
+print sum(NN[f]) # Degree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
