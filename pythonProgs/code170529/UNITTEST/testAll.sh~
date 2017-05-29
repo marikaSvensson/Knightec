@@ -1,6 +1,6 @@
 # By Marika Svensson 
 #--------------------------------------------------------------------
-echo '----------  passing an argument in a  shell script---------'
+echo '------------  passing an argument in a  shell script---------'
 f1=$1
 echo $f1 
 
@@ -8,9 +8,9 @@ echo $f1
 #--------------------------------------------------------------------
 file='unnecessary_math.py'
 
-echo '--------------- doc test  w. -m flag------------------'
+echo '--------------------- doc test  w. -m flag------------------'
 python -m doctest $file
-echo '--------------- doc test  w. -m, -v flags------------'
+echo '--------------------- doc test  w. -m, -v flags------------------'
 python -m doctest -v $file 
 #--------------------------------------------------------------------
 
