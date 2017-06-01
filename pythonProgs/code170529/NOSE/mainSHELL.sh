@@ -1,1 +1,1 @@
-nosetests test_um_nose.py
+nosetests test_um_nose.py -v 
